@@ -28,8 +28,8 @@ class Playlist {
     this.tracks.forEach(track => {
       sum += track.rating;
     });
-    let average = sum / tracks.length;
-    return average;
+    let average = sum / this.tracks.length;
+    return Math.floor(average);
   }
 
   get totalDuration() {
